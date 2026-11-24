@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KX76XF8R');</script>
+<!-- End Google Tag Manager -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Econometría</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="La estadística de los datos económicos: el modelo lineal con sus restricciones y errores de especificación, mínimos cuadrados generalizados, heterocedasticidad, autocorrelación, variables instrumentales, modelos dinámicos, ecuaciones simultáneas, cointegración, VAR y datos de panel.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=JetBrains+Mono:wght@400;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400;1,8..60,600&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KX76XF8R"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="wrap" data-page="index">
+<header class="topbar"><a class="brand" href="index.html"><b>Econometría</b></a><span class="eyebrow">Curso visual e interactivo · Matemática</span><a class="al-sitio" href="https://aaramirez.github.io/">← Todos los cursos</a></header>
+<div class="layout">
+<nav class="toc" id="toc" aria-label="Ruta de aprendizaje"></nav>
+<main>
+
+<p class="aviso-curado" role="note">El material de Matemática está en proceso de curado: puede tener errores.</p>
+<header class="hero">
+  <span class="eyebrow">Curso visual e interactivo · Matemática</span>
+  <h1>Los datos económicos no vienen de un experimento, y eso lo cambia todo</h1>
+  <p class="lede">En economía casi nunca se puede repetir un experimento: los datos llegan como llegan, con errores que se correlacionan, variables que se determinan unas a otras y series que crecen sin volver a su media. La econometría es el conjunto de técnicas que, a pesar de eso, permite estimar relaciones y contrastarlas. El curso las demuestra y las prueba sobre datos reales.</p>
+</header>
+
+<section>
+  <h2>Cómo usar este curso</h2>
+  <div class="prose">
+    <p><b>Estado.</b> El curso está en preparación. La <a href="temario.html">tabla de contenido</a> ya tiene los 12 capítulos con sus secciones y sus laboratorios, y está en revisión.</p>
+    <p><b>Para quién es.</b> Para quien ya leyó Modelos lineales (mínimos cuadrados, el teorema de Gauss-Markov y las pruebas t y F) y Series de tiempo (estacionariedad, procesos ARIMA y raíces unitarias). Aquí se usan sin repetirlos.</p>
+    <p><b>Cómo está hecho.</b> Un hilo recorre el curso: una función de demanda de un bien, con precio, ingreso y una serie de años, que empieza como una regresión simple y termina como un sistema de oferta y demanda con cointegración. Los laboratorios dejan violar un supuesto y ver qué le pasa al estimador; las prácticas usan Python (`statsmodels`, `linearmodels`) o R (`lmtest`, `AER`, `urca`, `plm`). Es un nodo final del grafo: no es requisito de otro curso, pero prepara para el capítulo de cointegración y *trading* de pares de Finanzas cuantitativas.</p>
+  </div>
+</section>
+
+<details class="stage" id="temario" open><summary><h2><span class="pn">Empieza aquí</span> Tabla de contenido</h2></summary>
+  <div class="mods">
+    <a class="mod" href="temario.html"><span class="n">≡</span><b>Tabla de contenido</b><p>Cada capítulo con sus secciones y sus laboratorios.</p></a>
+  </div>
+</details>
+
+<details class="stage" id="parte-1" open><summary><h2><span class="pn">Parte 1</span> El modelo y sus supuestos</h2><span class="cuenta" data-etapa-cuenta="1"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="naturaleza-de-la-econometria"><span class="n">01</span><b>Naturaleza de la econometría: del modelo económico al modelo econométrico</b><p>Qué agrega la econometría a la teoría económica y a la estadística, y con qué datos trabaja.</p></div>
+    <div class="mod soon" data-id="modelo-lineal-con-k-variables"><span class="n">02</span><b>El modelo lineal con k variables en econometría</b><p>Mínimos cuadrados ordinarios y máxima verosimilitud aplicados, e interpretados como elasticidades y efectos parciales.</p></div>
+    <div class="mod soon" data-id="restricciones-y-especificacion"><span class="n">03</span><b>Estimación con restricciones y errores de especificación</b><p>Imponer y contrastar restricciones lineales, y lo que cuesta omitir o sobrar variables.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-2" open><summary><h2><span class="pn">Parte 2</span> Cuando los errores no son esféricos</h2><span class="cuenta" data-etapa-cuenta="2"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="minimos-cuadrados-generalizados"><span class="n">04</span><b>Matrices de covarianzas no escalares y mínimos cuadrados generalizados</b><p>El estimador de Aitken y su versión factible cuando la matriz de covarianzas no es σ²I.</p></div>
+    <div class="mod soon" data-id="heterocedasticidad"><span class="n">05</span><b>Heterocedasticidad: pruebas y remedios</b><p>Errores cuya varianza cambia con las variables: cómo se detectan y cómo se corrigen los errores estándar.</p></div>
+    <div class="mod soon" data-id="autocorrelacion"><span class="n">06</span><b>Autocorrelación de los errores</b><p>Errores que se arrastran de un período a otro: pruebas de Durbin-Watson y Breusch-Godfrey y estimación de Cochrane-Orcutt.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-3" open><summary><h2><span class="pn">Parte 3</span> Endogeneidad y dinámica</h2><span class="cuenta" data-etapa-cuenta="3"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="variables-instrumentales"><span class="n">07</span><b>Endogeneidad y el método de variables instrumentales</b><p>Cuando una variable explicativa está correlacionada con el error, MCO se sesga: los instrumentos lo arreglan.</p></div>
+    <div class="mod soon" data-id="modelos-dinamicos"><span class="n">08</span><b>Modelos dinámicos: rezagos distribuidos, expectativas y ajuste parcial</b><p>Efectos que se reparten en el tiempo y las especificaciones que los vuelven estimables.</p></div>
+    <div class="mod soon" data-id="ecuaciones-simultaneas"><span class="n">09</span><b>Modelos de ecuaciones simultáneas</b><p>Sistemas en los que las variables se determinan unas a otras: identificación y estimación.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-4" open><summary><h2><span class="pn">Parte 4</span> Series no estacionarias y paneles</h2><span class="cuenta" data-etapa-cuenta="4"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="cointegracion"><span class="n">10</span><b>Regresión espuria, cointegración y corrección de errores</b><p>Dos series que crecen sin relación parecen relacionadas; dos que comparten tendencia lo están de verdad.</p></div>
+    <div class="mod soon" data-id="var-y-johansen"><span class="n">11</span><b>Vectores autorregresivos, VECM y el método de Johansen</b><p>Generalización a n variables: cuántas relaciones de cointegración hay y cómo se estiman.</p></div>
+    <div class="mod soon" data-id="datos-de-panel"><span class="n">12</span><b>Datos de panel: efectos fijos y aleatorios</b><p>Muchas unidades observadas varios años: controlar lo que no se ve pero no cambia.</p></div>
+  </div>
+</details>
+
+
+
+<nav class="pager" id="pager" aria-label="Capítulo anterior y siguiente"></nav>
+</main>
+</div>
+<footer><span>Curso abierto de aaramirez.github.io.</span><span>Sitio publicado: <a href="https://github.com/aaramirez/mate-econometria" target="_blank" rel="noopener">github.com/aaramirez/mate-econometria</a></span></footer>
+</div>
+<script src="assets/lab.js"></script>
+</body>
+</html>
